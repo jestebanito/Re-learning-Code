@@ -14,10 +14,25 @@ console.log(myName);
 // Example of concatenating a string with a variable
 console.log("Hello Again, " + myName);
 
+// After declaring a let variable, don't redeclare it. If you want to change the output, just write the variable itself 
+let myAge = 99; 
+// Example of concatenating a variable with a number
+myAge = myAge + 1;
+
+// Use typeof to check the type of a variable. In this case, the type is a number
+console.log(typeof myAge);
+
 // Using uppercase constants are only for universal truths, such as these ones
 const METERS_TO_FEET = 3.281;
 const SECONDS_PER_DAY = 60*60*24;
 
-let myAge = 99;
-myAge = myAge ++;
-// console.log(myAge);
+// The use of null is for the intentional absence of a value
+const emptyObject = null;
+
+// Using true or false as values are called booleans
+const trueObject = true;
+const falseObject = false;
+
+// Using the symbol || means 'or'. Using the symbol && means 'and'.
+const trueOrFalseObject = true || false && true;
+
