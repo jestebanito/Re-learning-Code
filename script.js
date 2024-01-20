@@ -185,9 +185,9 @@ console.log(myMap);
 // GETELEMENTBYID************
 
 // The syntax for how to use document.getElementById().
-// In the HTML file connected to this script, I added an id attribute to the main tag called "main-content". This is how you can access it with document.getElementById().
+// In the HTML file connected to this script, I added an id attribute to the h2 tag called "main-content". This is how you can access it with document.getElementById().
 const mainContent = document.getElementById("main-content");
-console.log(mainContent); // Output: "This sentence is stored in the main content."
+console.log(mainContent); // Output: "This sentence is stored in the h2 content."
 
 // TEXTCONTENT************
 
