@@ -194,3 +194,25 @@ console.log(mainContent); // Output: "This sentence is stored in the h2 content.
 // Now that you've accessed the main content with document.getElementById, you can now manipulate it.
 // Here is an example of how you can change the text using textContent 
 mainContent.textContent = "I've now changed this sentence with JavaScript!"; // Output: "I've now changed this sentence with JavaScript!"
+
+// ONCLICK************
+// IF ELSE CONDITIONALS************
+// !OPERATOR
+
+// Here's a practical way to switch between different sentences that uses the onclick event, a boolean, a function, the ! operator, and a conditional statement.
+// Created a variable that uses getElementById();
+const targetParagraph = document.getElementById("this-paragraph");
+// Created a variable that is set to a false boolean  
+let isTextChanged = false;
+
+// Created a function so that when the user clicks on the targeted paragraph, it changes the text. If it's clicked on again it'll reverse the change, and vice versa.
+targetParagraph.onclick = function () {
+    if (isTextChanged) {
+        targetParagraph.textContent = "Click me! You'll produce a different text.";
+    } else {
+        targetParagraph.textContent = "I've changed this text with the onclick event! Click me again to go back.";
+    };
+    // This statement is so that everytime the user clicks on the target paragraph, it is switching the boolean from false to true and vice versa.
+    // The exclamation point is a logical NOT operator that toggles the value of the isTextChanged variable between true and false.
+    isTextChanged = !isTextChanged;
+};
