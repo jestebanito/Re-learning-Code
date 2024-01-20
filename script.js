@@ -112,3 +112,53 @@ const myDate = new Date();
 // Alternatively, you can set a dateString when creating a Date object
 const classStartDate = new Date('January 14, 2021 16:00:00');
 console.log(classStartDate);
+
+
+// This is the syntax for creating a new Set Object.
+let mySet = new Set();
+
+// Adding values to the Set
+mySet.add('apple');
+mySet.add('banana');
+mySet.add('orange');
+// Using Set ensures that only unique values are stored. If you attempt to add a value that already exists in the Set, it won't result in duplicate entries.
+mySet.add('apple'); // Attempting to add a duplicate value
+
+console.log(mySet); // Output: Set { 'apple', 'banana', 'orange' }
+
+// Checking if a value is in the Set
+console.log(mySet.has('banana')); // Output: true
+
+// Removing a value from the Set
+mySet.delete('banana');
+console.log(mySet); // Output: Set { 'apple', 'orange' }
+
+
+// This is the syntax for creating a new Map Object.
+let myMap = new Map();
+
+// Adding key-value pairs to the Map
+myMap.set('name', 'John');
+myMap.set('age', 30);
+myMap.set('city', 'New York');
+
+console.log(myMap); 
+// Output: Map {
+//   'name' => 'John',
+//   'age' => 30,
+//   'city' => 'New York'
+// }
+
+// Getting values by key
+console.log(myMap.get('name')); // Output: John
+
+// Checking if a key exists in the Map
+console.log(myMap.has('age')); // Output: true
+
+// Deleting a key-value pair from the Map
+myMap.delete('age');
+console.log(myMap); 
+// Output: Map {
+//   'name' => 'John',
+//   'city' => 'New York'
+// }
