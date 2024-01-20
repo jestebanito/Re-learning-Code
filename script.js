@@ -181,3 +181,16 @@ console.log(myMap);
 //   'name' => 'John',
 //   'city' => 'New York'
 // }
+
+// GETELEMENTBYID************
+
+// The syntax for how to use document.getElementById().
+// In the HTML file connected to this script, I added an id attribute to the main tag called "main-content". This is how you can access it with document.getElementById().
+const mainContent = document.getElementById("main-content");
+console.log(mainContent); // Output: "This sentence is stored in the main content."
+
+// TEXTCONTENT************
+
+// Now that you've accessed the main content with document.getElementById, you can now manipulate it.
+// Here is an example of how you can change the text using textContent 
+mainContent.textContent = "I've now changed this sentence with JavaScript!"; // Output: "I've now changed this sentence with JavaScript!"
