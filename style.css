@@ -2,14 +2,20 @@ h1 {
  color: #8A0000;
 }
 
-.name {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+#test {
     text-align: center;
+    transition: transform 0.2s ease-in-out;
 }
 
-.name p:hover {
-    color: #8A0000;
+#test:hover {
     transform: scale(1.2);
+}
+
+#test a {
+    text-decoration: none;
+    color: black;
+}
+
+#test a:hover {
+    color: #8A0000;
 }
