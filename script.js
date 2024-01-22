@@ -197,7 +197,7 @@ mainContent.textContent = "I've now changed this sentence with JavaScript!"; // 
 
 // ONCLICK************
 // IF ELSE CONDITIONALS************
-// !OPERATOR
+// ! LOGICAL OPERATOR
 
 // Here's a practical way to switch between different sentences that uses the onclick event, a boolean, a function, the ! operator, and a conditional statement.
 // Created a variable that uses getElementById();
@@ -215,4 +215,12 @@ targetParagraph.onclick = function () {
     // This statement is so that everytime the user clicks on the target paragraph, it is switching the boolean from false to true and vice versa.
     // The exclamation point is a logical NOT operator that toggles the value of the isTextChanged variable between true and false.
     isTextChanged = !isTextChanged;
+};
+
+const testVariable = document.getElementById("test");
+let userName = "Josh";
+
+testVariable.onclick = function () {
+    userName = window.prompt('Please enter your name');
+    userName.textContent = "Hello, " + userName;
 };
