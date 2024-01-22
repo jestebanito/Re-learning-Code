@@ -222,5 +222,6 @@ let userName = "Josh";
 
 testVariable.onclick = function () {
     userName = window.prompt('Please enter your name');
+    // This statement is concatenating a string with the userName variable, which is also a string.     
     userName.textContent = "Hello, " + userName;
 };
