@@ -218,10 +218,9 @@ targetParagraph.onclick = function () {
 };
 
 const testVariable = document.getElementById("test");
-let userName = "Josh";
+let userName = "";
 
 testVariable.onclick = function () {
-    userName = window.prompt('Please enter your name');
-    // This statement is concatenating a string with the userName variable.     
-    userName.textContent = "Hello, " + userName;
+    userName = window.prompt("Please enter a name");
+    alert("Hello, " + userName);
 };
