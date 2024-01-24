@@ -217,9 +217,16 @@ targetParagraph.onclick = function () {
     isTextChanged = !isTextChanged;
 };
 
+// PROMPT************
+// ALERT************
+
+// Here's a practical way to use the prompt and alert functions.
+// Created a variable that uses getElementById();
 const testVariable = document.getElementById("test");
+// Created a variable that is set to an empty string
 let userName = "";
 
+// Created a function so that when the user clicks on the targeted paragraph, it prompts the user to enter a name. Once the user enters a name, it alerts the user with a greeting.
 testVariable.onclick = function () {
     userName = window.prompt("Please enter a name");
     alert("Hello, " + userName);
