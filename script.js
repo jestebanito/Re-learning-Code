@@ -231,3 +231,10 @@ testVariable.onclick = function () {
     userName = window.prompt("Please enter a name");
     alert("Hello, " + userName);
 };
+
+// For single lined comments, use '//'.
+
+/*      
+    For multi-lined comments, start with '/*', and end with '*\'.
+    This is a multi-lined comment.
+*/      
